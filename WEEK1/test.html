@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <script>
+    function checkMobileNumber() {
+      let number = document.getElementById("mobileNumber").value;
+      if (number == null || number.toString().match("^1\\d{10}$") == null) {
+        alert("请输入正确号码");
+        return;
+      }
+      alert("合法号码");
+    }
+
+    function getAnimal() {
+      let year = document.getElementById("year").value;
+      if (year == null || year.length == 0) {
+        alert("请输入有效年份");
+        return;
+      }
+      let yearNum = parseInt(year);
+      if (yearNum < 0) {
+        alert("请输入有效年份");
+        return;
+      }
+      let animals = ["鼠", "牛", "虎", "兔", "龙", "蛇", "马", "羊", "猴", "鸡", "狗", "猪"];
+      let index = (yearNum + 8) % 12;
+      console.log(index);
+
+      alert("这一年是：" + animals[index] + "年");
+    }
+  </script>
+</head>
+
+<body>
+  <input type="number" , id="mobileNumber">
+  <button onclick="checkMobileNumber()">Check Mobile Number</button>
+  <br>
+  <input type="number" , id="year">
+  <button onclick="getAnimal()">Get Zodiac</button>
+</body>
+
+</html>

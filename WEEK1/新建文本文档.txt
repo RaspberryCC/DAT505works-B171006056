@@ -1,0 +1,72 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+   <script type="text/javascript">
+    function checkMobile(mobile) 
+
+   { 
+
+       if(mobile.length==0) 
+
+       { 
+
+          layer.msg("请输入手机号码！");
+
+          document.form1.mobile.focus(); 
+
+          return false; 
+
+       }  
+
+
+       if(mobile.length!=11) 
+
+       { 
+
+          layer.msg("请输入有效的手机号码！");
+
+           document.form1.mobile.focus(); 
+
+           return false; 
+
+       } 
+
+    var myreg= /^[1]\d{10}$/;
+    if (!myreg.test(phone)) 
+  {
+     layer.msg("请输入有效的手机号码！");
+
+           document.form1.mobile.focus(); 
+   
+           return false;
+    }
+ 
+
+   } 
+
+    <script>
+     function getAnimal(year){
+         if(year<0){
+              alert(＂输入信息有误＂）
+              return false;
+         ｝
+         var animals=[＂鼠＂,＂牛＂,＂虎＂,＂兔＂,＂龙”,＂蛇＂,＂马＂,＂羊＂,＂猴＂,＂鸡＂,＂狗＂,＂猪＂］；
+         var index=year%12;
+         return animals[index];
+     ｝
+     console.log("这一年是：＂＋getAnimal(201)+"年＂）
+     <／script>
+<／body>
+<／html>
+
+
+
+
+
+
+
+
+
+
