@@ -1,0 +1,23 @@
+/*My CSS, if required, goes here*/
+#webgl
+
+{
+  margin: 0;
+  padding: 0;
+}
+
+#showdog1{
+  width:80px;
+  height: 80px;
+  background: url("niantu.jpg") no-repeat;
+}
+#showdog2{
+  width:80px;
+  height: 80px;
+  background: url("454.jpg") no-repeat;
+}
+#showdog3{
+  width:80px;
+  height: 80px;
+  background: url("458.jpg") no-repeat;
+}
